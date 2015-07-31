@@ -1,6 +1,8 @@
 ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
+ENV["MT_RAILS_NO_AUTORUN"] = "true"
+
 require 'minitest/rails'
 require "minitest/reporters"
 Minitest::Reporters.use!
