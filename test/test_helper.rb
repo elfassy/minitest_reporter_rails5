@@ -5,7 +5,7 @@ ENV["MT_RAILS_NO_AUTORUN"] = "true"
 
 require 'minitest/rails'
 require "minitest/reporters"
-Minitest::Reporters.use!
+Minitest::Reporters.use! Minitest::Reporters::ProgressReporter.new
 
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.

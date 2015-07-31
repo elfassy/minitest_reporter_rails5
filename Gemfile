@@ -24,8 +24,8 @@ gem 'active_model_serializers', '~> 0.10.0.rc2'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
-  gem 'minitest-rails', github: 'blowmage/minitest-rails', branch: 'rails5'
-  gem 'minitest-reporters'
+  gem 'minitest-rails', github: 'blowmage/minitest-rails', branch: 'rails5', require: false
+  gem 'minitest-reporters', require: false
 end
 
 group :development do
